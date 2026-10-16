@@ -1,0 +1,24 @@
+{
+    "expansion": false,
+    "google_play_key": null,
+    "google_play_salt": null,
+    "heap_size": "10",
+    "icon_name": "\u670b\u53cb\u7684\u5de8\u4e73\u5973\u53cb\u6ca6\u4e3a\u6211\u7684\u73a9\u7269",
+    "include_pil": false,
+    "include_sqlite": false,
+    "layout": null,
+    "name": "\u670b\u53cb\u7684\u5de8\u4e73\u5973\u53cb\u6ca6\u4e3a\u6211\u7684\u73a9\u7269",
+    "numeric_version": 1,
+    "orientation": "sensorLandscape",
+    "package": "com.pydjrnycwwdww.program",
+    "permissions": [
+        "VIBRATE",
+        "INTERNET"
+    ],
+    "source": false,
+    "store": "none",
+    "update_always": true,
+    "update_icons": true,
+    "update_keystores": true,
+    "version": "1.0"
+}

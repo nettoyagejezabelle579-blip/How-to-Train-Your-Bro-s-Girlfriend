@@ -1,0 +1,1862 @@
+ 
+UnRen-current.bat (v9.7.51) (03/03/26), started on ~4,2/~6,2/,4 at ~8,2:~10,2:~12,2 
+ 
+检查 PowerShell 是否可用...  
+通过 
+检查 game、lib、renpy 目录是否存在... 
+ 通过 
+测试对游戏目录的写入权限... 
+通过 
+检查 Python 是否可用... 
+ 通过 Python 3.9 
+Check Python Version... 
+Python version is 3.9.10, which is upper or equal to 3.8 
+检测到的 Ren'Py 版本： 
+"C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -Command "[IO.File]::WriteAllText('detect_renpy_version.py.tmp', [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String((Get-Content 'detect_renpy_version.py.b64'))))" 
+8 
+ 
+"Init phase" 
+SCRIPTDIR		 = D:\19808\Downloads\Resource Sharing\[A]AA\UnRen-forall-la_0.50-le_9.7.31-cu_9.7.51\ 
+WORKDIR 		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5 
+PYTHONHOME		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\ 
+PYNOASSERT		 = [] 
+PYTHONHOME		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\ 
+PYTHONPATH		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\python3.9 
+PYTHONVERS		 = [3.9.10] 
+RPATOOL-NEW 	 = y 
+RENPYVERSION 	 = [8] 
+OFFSET			 = [] 
+ 
+ 
+ 
+工作目录：D:\19808\Downloads\Resource Sharing\Bros G v1.1.5 
+ 
+ 
+ 
+ 
+ 
+"RPA extract phase" 
+SCRIPTDIR		 = D:\19808\Downloads\Resource Sharing\[A]AA\UnRen-forall-la_0.50-le_9.7.31-cu_9.7.51\ 
+WORKDIR 		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5 
+PYTHONHOME		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\ 
+PYNOASSERT		 = [] 
+PYTHONHOME		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\ 
+PYTHONPATH		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\python3.9 
+PYTHONVERS		 = [3.9.10] 
+RPATOOL-NEW 	 = y 
+RENPYVERSION 	 = [8] 
+OFFSET			 = [] 
+ 
+"C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -Command "& { [IO.File]::WriteAllBytes('D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\detect_rpa_ext.py.tmp', [Convert]::FromBase64String([IO.File]::ReadAllText('D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\detect_rpa_ext.py.b64')))}" 
+ 
+在游戏目录中搜索 RPA 文件... 
+ 通过 找到扩展名： rpa 
+ 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\\python.exe"  "C:\Users\19808\AppData\Local\Temp\choiceEx.py" "提取后是否删除 RPA 存档？输入 [y/n]（默认 n）：" "OSJYN" "N" "5" "-rawMsg" 
+    + RPA 存档将在提取后被删除。 
+ 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\\python.exe"  "C:\Users\19808\AppData\Local\Temp\choiceEx.py" "解包全部还是选择 RPA 存档？输入 [a/s]（默认 a）： " "ATS" "A" "5" "-rawMsg" 
+    + 所有 RPA 存档将被解包。 
+ 
+ 
+正在创建 rpatool 和 altrpatool... 
+"C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -Command "& { [IO.File]::WriteAllBytes('C:\Users\19808\AppData\Local\Temp\detect_archive.py.tmp', [Convert]::FromBase64String([IO.File]::ReadAllText('C:\Users\19808\AppData\Local\Temp\detect_archive.py.b64')))}" 
+"C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -Command "& { [IO.File]::WriteAllBytes('D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\rpatool.py.tmp', [Convert]::FromBase64String([IO.File]::ReadAllText('D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\rpatool.py.b64'))) }" 
+"C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -Command "& { [IO.File]::WriteAllBytes('D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\altrpatool.py.tmp', [Convert]::FromBase64String([IO.File]::ReadAllText('D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\altrpatool.py.b64'))) }" 
+ 通过 
+ 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "C:\Users\19808\AppData\Local\Temp\detect_archive.py" "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\archive.rpa" 
+ 
+    + 正在解包文件： archive.rpa 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\rpatool.py" -o game -x "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\archive.rpa" 
+    + RPA 文件已解包: archive.rpa 
+    + 正在删除 RPA 文件 'D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\archive.rpa' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "C:\Users\19808\AppData\Local\Temp\detect_archive.py" "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\gui_resource.rpa" 
+ 
+    + 正在解包文件： gui_resource.rpa 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\rpatool.py" -o game -x "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\gui_resource.rpa" 
+    + RPA 文件已解包: gui_resource.rpa 
+    + 正在删除 RPA 文件 'D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\gui_resource.rpa' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "C:\Users\19808\AppData\Local\Temp\detect_archive.py" "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\img_resource.rpa" 
+ 
+    + 正在解包文件： img_resource.rpa 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\rpatool.py" -o game -x "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\img_resource.rpa" 
+    + RPA 文件已解包: img_resource.rpa 
+    + 正在删除 RPA 文件 'D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\img_resource.rpa' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "C:\Users\19808\AppData\Local\Temp\detect_archive.py" "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\sfx_resource.rpa" 
+ 
+    + 正在解包文件： sfx_resource.rpa 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\rpatool.py" -o game -x "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\sfx_resource.rpa" 
+    + RPA 文件已解包: sfx_resource.rpa 
+    + 正在删除 RPA 文件 'D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\sfx_resource.rpa' 
+ 
+清理临时文件... 
+操作完成。 
+ 
+ 
+ 
+工作目录：D:\19808\Downloads\Resource Sharing\Bros G v1.1.5 
+ 
+ 
+ 
+ 
+"C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -Command "& { [IO.File]::WriteAllBytes(\"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decomp.cab\", [Convert]::FromBase64String([IO.File]::ReadAllText(\"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decomp.cab.tmp\")))}" 
+ 
+反编译工具创建成功。 
+ 
+ 
+反编译后是否覆盖 RPY 文件？ 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\\python.exe"  "C:\Users\19808\AppData\Local\Temp\choiceEx.py" "输入 [y/n]（默认 n）： " "OSJYN" "N" "5" "-rawMsg" 
+    反编译后将覆盖现有的 RPY 文件。 
+ 
+ 
+"RPYC extract phase" 
+SCRIPTDIR		 = D:\19808\Downloads\Resource Sharing\[A]AA\UnRen-forall-la_0.50-le_9.7.31-cu_9.7.51\ 
+WORKDIR 		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5 
+PYTHONHOME		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\ 
+PYNOASSERT		 = [] 
+PYTHONHOME		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\ 
+PYTHONPATH		 = D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\python3.9 
+PYTHONVERS		 = [3.9.10] 
+RPATOOL-NEW 	 = y 
+RENPYVERSION 	 = [8] 
+OFFSET			 = [] 
+ 
+ 
+正在提取 decomp.cab... 
+Microsoft (R) 文件扩展实用程序
+版权所有 (c) Microsoft Corporation。保留所有权利。
+
+正在将 D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decompiler\deobfuscate.py 添加到提取队列
+正在将 D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decompiler\unrpyc.py 添加到提取队列
+正在将 D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decompiler\__init__.py 添加到提取队列
+正在将 D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decompiler\astdump.py 添加到提取队列
+正在将 D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decompiler\atldecompiler.py 添加到提取队列
+正在将 D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decompiler\magic.py 添加到提取队列
+正在将 D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decompiler\renpycompat.py 添加到提取队列
+正在将 D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decompiler\sl2decompiler.py 添加到提取队列
+正在将 D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decompiler\testcasedecompiler.py 添加到提取队列
+正在将 D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decompiler\translate.py 添加到提取队列
+正在将 D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\decompiler\util.py 添加到提取队列
+
+正在展开文件 ....
+
+完成展开文件 ...
+总共 11 个文件。
+移动了         1 个文件。
+移动了         1 个文件。
+ 通过 
+ 
+ 
+在游戏目录中搜索 RPYC 文件... 
+    + 正在反编译文件： 'characters.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\characters.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\characters.rpyc to characters.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'credits.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\credits.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\credits.rpyc to credits.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'script.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\script.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\script.rpyc to script.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'spriteviewer.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\spriteviewer.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\spriteviewer.rpyc to spriteviewer.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '01_settings\achievements.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\01_settings\achievements.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\01_settings\achievements.rpyc to achievements.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '01_settings\build_type.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\01_settings\build_type.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\01_settings\build_type.rpyc to build_type.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '01_settings\gui.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\01_settings\gui.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\01_settings\gui.rpyc to gui.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '01_settings\scene_defs.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\01_settings\scene_defs.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\01_settings\scene_defs.rpyc to scene_defs.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '01_settings\preset\audio.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\01_settings\preset\audio.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\01_settings\preset\audio.rpyc to audio.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '01_settings\preset\image_settings.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\01_settings\preset\image_settings.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\01_settings\preset\image_settings.rpyc to image_settings.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '01_settings\preset\input.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\01_settings\preset\input.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\01_settings\preset\input.rpyc to input.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '01_settings\preset\key_map.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\01_settings\preset\key_map.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\01_settings\preset\key_map.rpyc to key_map.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '01_settings\preset\lovense.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\01_settings\preset\lovense.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\01_settings\preset\lovense.rpyc to lovense.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '01_settings\preset\options.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\01_settings\preset\options.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\01_settings\preset\options.rpyc to options.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '2_utils\auto_locale.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\2_utils\auto_locale.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\2_utils\auto_locale.rpyc to auto_locale.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '2_utils\backup_side_sprites.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\2_utils\backup_side_sprites.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\2_utils\backup_side_sprites.rpyc to backup_side_sprites.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '2_utils\call_to_server.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\2_utils\call_to_server.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\2_utils\call_to_server.rpyc to call_to_server.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '2_utils\language_toggle.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\2_utils\language_toggle.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\2_utils\language_toggle.rpyc to language_toggle.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '2_utils\multi_line_dialogue.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\2_utils\multi_line_dialogue.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\2_utils\multi_line_dialogue.rpyc to multi_line_dialogue.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '2_utils\proofing_tools\config_settings.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\2_utils\proofing_tools\config_settings.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\2_utils\proofing_tools\config_settings.rpyc to config_settings.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '2_utils\proofing_tools\get_sprites.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\2_utils\proofing_tools\get_sprites.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\2_utils\proofing_tools\get_sprites.rpyc to get_sprites.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '2_utils\proofing_tools\get_tl.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\2_utils\proofing_tools\get_tl.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\2_utils\proofing_tools\get_tl.rpyc to get_tl.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '2_utils\proofing_tools\get_xray.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\2_utils\proofing_tools\get_xray.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\2_utils\proofing_tools\get_xray.rpyc to get_xray.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '2_utils\proofing_tools\recorders\record_sprite_backups.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\2_utils\proofing_tools\recorders\record_sprite_backups.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\2_utils\proofing_tools\recorders\record_sprite_backups.rpyc to record_sprite_backups.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '3_menus\chapter_select.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\3_menus\chapter_select.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\3_menus\chapter_select.rpyc to chapter_select.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '3_menus\extras.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\3_menus\extras.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\3_menus\extras.rpyc to extras.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '3_menus\gallery.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\3_menus\gallery.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\3_menus\gallery.rpyc to gallery.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '3_menus\help.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\3_menus\help.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\3_menus\help.rpyc to help.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '3_menus\h_scene_select.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\3_menus\h_scene_select.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\3_menus\h_scene_select.rpyc to h_scene_select.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '3_menus\screens.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\3_menus\screens.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\3_menus\screens.rpyc to screens.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '3_menus\splashscreen.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\3_menus\splashscreen.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\3_menus\splashscreen.rpyc to splashscreen.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '3_menus\splashscreen_screen.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\3_menus\splashscreen_screen.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\3_menus\splashscreen_screen.rpyc to splashscreen_screen.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '4_visuals\configure_character_sprites.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\4_visuals\configure_character_sprites.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\4_visuals\configure_character_sprites.rpyc to configure_character_sprites.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '4_visuals\configure_character_sprites_functions.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\4_visuals\configure_character_sprites_functions.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\4_visuals\configure_character_sprites_functions.rpyc to configure_character_sprites_functions.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '4_visuals\configure_images.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\4_visuals\configure_images.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\4_visuals\configure_images.rpyc to configure_images.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '4_visuals\configure_images_functions.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\4_visuals\configure_images_functions.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\4_visuals\configure_images_functions.rpyc to configure_images_functions.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '4_visuals\preset\animations.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\4_visuals\preset\animations.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\4_visuals\preset\animations.rpyc to animations.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '4_visuals\preset\disclaimer.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\4_visuals\preset\disclaimer.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\4_visuals\preset\disclaimer.rpyc to disclaimer.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： '4_visuals\preset\xray.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\4_visuals\preset\xray.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\4_visuals\preset\xray.rpyc to xray.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\game_name.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\game_name.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\game_name.rpyc to game_name.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\lovense.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\lovense.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\lovense.rpyc to lovense.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\characters.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\characters.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\characters.rpyc to characters.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\common.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\common.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\common.rpyc to common.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\credits.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\credits.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\credits.rpyc to credits.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\script.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\script.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\script.rpyc to script.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\spriteviewer.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\spriteviewer.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\spriteviewer.rpyc to spriteviewer.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\01_settings\preset\input.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\01_settings\preset\input.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\01_settings\preset\input.rpyc to input.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\01_settings\preset\lovense.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\01_settings\preset\lovense.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\01_settings\preset\lovense.rpyc to lovense.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\3_menus\chapter_select.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\3_menus\chapter_select.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\3_menus\chapter_select.rpyc to chapter_select.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\3_menus\extras.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\3_menus\extras.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\3_menus\extras.rpyc to extras.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\3_menus\help.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\3_menus\help.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\3_menus\help.rpyc to help.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\3_menus\screens.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\3_menus\screens.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\3_menus\screens.rpyc to screens.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\en\4_visuals\preset\disclaimer.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\en\4_visuals\preset\disclaimer.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\en\4_visuals\preset\disclaimer.rpyc to disclaimer.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\characters.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\characters.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\characters.rpyc to characters.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\common.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\common.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\common.rpyc to common.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\credits.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\credits.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\credits.rpyc to credits.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\script.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\script.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\script.rpyc to script.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\spriteviewer.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\spriteviewer.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\spriteviewer.rpyc to spriteviewer.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\01_settings\preset\input.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\01_settings\preset\input.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\01_settings\preset\input.rpyc to input.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\01_settings\preset\lovense.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\01_settings\preset\lovense.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\01_settings\preset\lovense.rpyc to lovense.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\3_menus\chapter_select.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\3_menus\chapter_select.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\3_menus\chapter_select.rpyc to chapter_select.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\3_menus\extras.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\3_menus\extras.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\3_menus\extras.rpyc to extras.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\3_menus\help.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\3_menus\help.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\3_menus\help.rpyc to help.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\3_menus\screens.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\3_menus\screens.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\3_menus\screens.rpyc to screens.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\english\4_visuals\preset\disclaimer.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\english\4_visuals\preset\disclaimer.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\english\4_visuals\preset\disclaimer.rpyc to disclaimer.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\es\chapterselect.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\es\chapterselect.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\es\chapterselect.rpyc to chapterselect.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\es\characters.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\es\characters.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\es\characters.rpyc to characters.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\es\common.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\es\common.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\es\common.rpyc to common.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\es\credits.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\es\credits.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\es\credits.rpyc to credits.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\es\extras.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\es\extras.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\es\extras.rpyc to extras.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\es\hsceneselect.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\es\hsceneselect.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\es\hsceneselect.rpyc to hsceneselect.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\es\input.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\es\input.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\es\input.rpyc to input.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\es\screens.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\es\screens.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\es\screens.rpyc to screens.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\es\script.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\es\script.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\es\script.rpyc to script.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\es\splashscreen.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\es\splashscreen.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\es\splashscreen.rpyc to splashscreen.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\es\spriteviewer.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\es\spriteviewer.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\es\spriteviewer.rpyc to spriteviewer.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\chapterselect.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\chapterselect.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\chapterselect.rpyc to chapterselect.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\characters.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\characters.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\characters.rpyc to characters.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\common.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\common.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\common.rpyc to common.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\credits.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\credits.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\credits.rpyc to credits.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\disclaimer.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\disclaimer.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\disclaimer.rpyc to disclaimer.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\extras.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\extras.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\extras.rpyc to extras.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\help.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\help.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\help.rpyc to help.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\hsceneselect.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\hsceneselect.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\hsceneselect.rpyc to hsceneselect.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\input.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\input.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\input.rpyc to input.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\screens.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\screens.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\screens.rpyc to screens.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\script.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\script.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\script.rpyc to script.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhcn\spriteviewer.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhcn\spriteviewer.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhcn\spriteviewer.rpyc to spriteviewer.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\chapterselect.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\chapterselect.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\chapterselect.rpyc to chapterselect.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\characters.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\characters.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\characters.rpyc to characters.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\common.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\common.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\common.rpyc to common.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\credits.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\credits.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\credits.rpyc to credits.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\disclaimer.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\disclaimer.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\disclaimer.rpyc to disclaimer.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\extras.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\extras.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\extras.rpyc to extras.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\help.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\help.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\help.rpyc to help.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\hsceneselect.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\hsceneselect.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\hsceneselect.rpyc to hsceneselect.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\input.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\input.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\input.rpyc to input.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\screens.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\screens.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\screens.rpyc to screens.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\script.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\script.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\script.rpyc to script.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+    + 正在反编译文件： 'tl\zhtw\spriteviewer.rpyc' 
+"D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\lib\py3-windows-x86_64\python.exe"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py"  "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\game\tl\zhtw\spriteviewer.rpyc" 
+Traceback (most recent call last):
+  File "D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\unrpyc.py", line 42, in <module>
+    import _multiprocessing
+ModuleNotFoundError: No module named '_multiprocessing'
+The multiprocessing module is not available or broken! Proceeding with single threaded decompilation. This will be slow.
+
+Found 1 file to process. Performing decompilation using 1 worker.
+Decompiling D:\19808\Downloads\Resource Sharing\Bros G v1.1.5\Game\tl\zhtw\spriteviewer.rpyc to spriteviewer.rpy ...
+
+
+-------------------------------------------------------
+Unrpyc v2.0.3 results summary:
+-------------------------------------------------------
+Processed 1 file.
+> 1 file were successfully decompiled.
+ 
+清理临时文件... 
+操作完成。 
+ 
+ 
+ 
+工作目录：D:\19808\Downloads\Resource Sharing\Bros G v1.1.5 
+ 
+ 
+ 
+ 
